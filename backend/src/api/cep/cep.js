@@ -7,14 +7,14 @@ const mongoose = restful.mongoose
 const cepSchema = new mongoose.Schema({
     cep: {type: String, required: true},
     logradouro: {type: String, required: true},
-    complemento: {type: String, required: true},
+    complemento: {type: String, required: false},
     bairro: {type: String, required: true},
     localidade: {type: String, required: true},
     uf: {type: String, required: true},
-    ibge: {type: Number, required: true},
-    ddd: {type: Number, required: true},
-    siafi: {type: Number, required: true},
-    gia: {type: Number, required: true}
+    ibge: {type: String, required: false},
+    ddd: {type: String, required: false},
+    siafi: {type: String, required: false},
+    gia: {type: String, required: false}
 })
 
 // exportando
