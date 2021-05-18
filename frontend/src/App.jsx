@@ -58,6 +58,7 @@ export default function App() {
                 <div className="form-group">
                 <label className="form-label" htmlFor="cep"> CEP </label>
                 <input
+                    placeholder="Digite aqui o CEP que deseja consultar"
                     className="form-control"
                     onChange={(e) => sOnChange(e)}
                     type="text"
